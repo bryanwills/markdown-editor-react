@@ -1,4 +1,4 @@
-import{u as c,a as t,j as n,I as m,k as u}from"./index-BcVCID3W.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
+import{u as c,a as t,j as n,I as m,h as u}from"./index-COVN6kA-.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
 
 ## 🔖 MdPreview Props
 
@@ -733,7 +733,7 @@ Except for the same as \`MdPreview\`:
 
 ### 📥 transformImgUrl
 
-- **type**: \`(imgUrl: string) => string\`
+- **type**: \`(imgUrl: string) => string | Promise<string>\`
 - **default**: \`t => t\`
 
   Transform image links
@@ -2768,7 +2768,7 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 
 ### 🪒 transformImgUrl
 
-- **类型**：\`(imgUrl: string) => string\`
+- **类型**：\`(imgUrl: string) => string | Promise<string>\`
 - **默认值**：\`t => t\`
 
   转换图片链接
