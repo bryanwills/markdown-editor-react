@@ -1,4 +1,4 @@
-import{h as c,a as t,j as n,I as m,k as u}from"./index-ButNm9v8.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
+import{h as m,a as t,j as n,I as c,k as u}from"./index-DxYcZ-IT.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
 
 ## 🔖 MdPreview Props
 
@@ -1572,6 +1572,7 @@ To help developers quickly insert content and use editor attributes, the editor 
 | --- | --- |
 | insert | Refer to the \`DropdownToolbar\` component example below |
 | theme | Refer to the extension components in the [ExportPDF](https://github.com/imzbf/md-editor-extension/blob/main/packages/rt/components/ExportPDF/ExportPDF.tsx#L71) |
+| previewtheme | Same as above |
 | language | Same as above |
 
 !!!
@@ -3622,6 +3623,7 @@ config({
 | --- | --- |
 | insert | 参考下方的\`DropdownToolbar\`组件示例 |
 | theme | 参考扩展组件中的[ExportPDF](https://github.com/imzbf/md-editor-extension/blob/main/packages/rt/components/ExportPDF/ExportPDF.tsx#L71) |
+| previewtheme | 同上 |
 | language | 同上 |
 
 !!!
@@ -4042,4 +4044,4 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 ## ✍️ 编辑此页面
 
 [doc-zh-CN](https://github.com/imzbf/md-editor-rt/blob/dev-docs/public/doc-zh-CN.md)
-`,i="doc-preview",g=()=>{const e=c(d=>d),[s,l]=t.useState(()=>e.lang==="zh-CN"?r:o),a=()=>{l(e.lang==="en-US"?o:r)};return t.useEffect(a,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(m,{editorId:i,modelValue:s}),n.jsx(u,{editorId:i})]})})};export{g as default};
+`,i="doc-preview",g=()=>{const e=m(d=>d),[s,l]=t.useState(()=>e.lang==="zh-CN"?r:o),a=()=>{l(e.lang==="en-US"?o:r)};return t.useEffect(a,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(c,{editorId:i,modelValue:s}),n.jsx(u,{editorId:i})]})})};export{g as default};
