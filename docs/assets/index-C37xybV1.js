@@ -1,4 +1,4 @@
-import{h as m,a as t,j as n,I as c,k as u}from"./index-DxYcZ-IT.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
+import{h as m,a as t,j as n,I as c,k as u}from"./index-Dk2A1xC6.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
 
 ## 🔖 MdPreview Props
 
