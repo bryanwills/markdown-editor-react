@@ -1,4 +1,4 @@
-import{u as m,r as t,j as n,I as c,f as u}from"./index-D8lQAKZl.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
+import{u as m,r as t,j as n,I as c,e as u}from"./index-CK-D5wYk.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
 
 ## 🔖 MdPreview Props
 
@@ -395,6 +395,24 @@ This is the props of \`MdPreview\`, which is also part of \`MdEditor\`:
 - **default**: \`(h: string) => Promise.resolve(h)\`
 
   Convert the generated mermaid code
+
+---
+
+### 🕹 codeFoldable
+
+- **type**: \`boolean\`
+- **default**: \`true\`
+
+  Whether to enable code folding feature
+
+---
+
+### ⏲ autoFoldThreshold
+
+- **type**: \`number\`
+- **default**: \`30\`
+
+  Threshold for triggering automatic code folding by line count
 
 ---
 
@@ -1453,9 +1471,6 @@ config({
 });
 \`\`\`
 
-<details>
-  <summary>[EditorExtensions]</summary>
-
 \`\`\`ts
 export interface EditorExtensions {
   highlight?: {
@@ -1497,8 +1512,6 @@ export interface EditorExtensions {
   };
 }
 \`\`\`
-
-</details>
 
 ---
 
@@ -2463,6 +2476,24 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 - **默认值**：\`(h: string) => Promise.resolve(h)\`
 
   转换生成的 mermaid 代码
+
+---
+
+### 🕹 codeFoldable
+
+- **类型**：\`boolean\`
+- **默认值**：\`true\`
+
+  是否开启折叠代码功能
+
+---
+
+### ⏲ autoFoldThreshold
+
+- **类型**：\`number\`
+- **默认值**：\`30\`
+
+  触发自动折叠代码的行数阈值
 
 ---
 
@@ -3563,9 +3594,6 @@ config({
 });
 \`\`\`
 
-<details>
-  <summary>[EditorExtensions]</summary>
-
 \`\`\`ts
 export interface EditorExtensions {
   highlight?: {
@@ -3607,8 +3635,6 @@ export interface EditorExtensions {
   };
 }
 \`\`\`
-
-</details>
 
 ---
 
@@ -4166,4 +4192,4 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 ## ✍️ 编辑此页面
 
 [doc-zh-CN](https://github.com/imzbf/md-editor-rt/blob/dev-docs/public/doc-zh-CN.md)
-`,i="doc-preview",g=()=>{const e=m(d=>d),[s,a]=t.useState(()=>e.lang==="zh-CN"?r:o),l=()=>{a(e.lang==="en-US"?o:r)};return t.useEffect(l,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(c,{editorId:i,modelValue:s}),n.jsx(u,{editorId:i})]})})};export{g as default};
+`,i="doc-preview",g=()=>{const e=m(d=>d),[s,l]=t.useState(()=>e.lang==="zh-CN"?r:o),a=()=>{l(e.lang==="en-US"?o:r)};return t.useEffect(a,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(c,{editorId:i,modelValue:s}),n.jsx(u,{editorId:i})]})})};export{g as default};
