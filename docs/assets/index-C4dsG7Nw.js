@@ -1,4 +1,4 @@
-import{u as l,r as t,j as n,I as c,h as p,i as u}from"./index-Dd16ezBD.js";const r=`## 😁 Basic Usage
+import{u as l,r as t,j as n,I as c,f as p,h as u}from"./index-Cdj2MI_N.js";const r=`## 😁 Basic Usage
 
 It has been developing iteratively, so update the latest version please. Publish logs: [releases](https://github.com/imzbf/md-editor-rt/releases)
 
@@ -41,6 +41,8 @@ yarn add md-editor-rt
 npm install md-editor-rt
 \`\`\`
 
+When using server-side rendering, make sure to set \`editorId\` to a constant value.
+
 #### 🤓 Jsx Template
 
 \`\`\`jsx
@@ -74,6 +76,8 @@ export default () => {
   );
 };
 \`\`\`
+
+When using server-side rendering, \`scrollElement\` should be of string type, eg: \`body\`, \`#id\`, \`.class\`.
 
 ## 🥂 Api usage
 
@@ -876,6 +880,8 @@ yarn add md-editor-rt
 npm install md-editor-rt
 \`\`\`
 
+当使用服务端渲染时，请务必设置\`editorId\`为固定值。
+
 #### 🤓 基本使用
 
 \`\`\`jsx
@@ -909,6 +915,8 @@ export default () => {
   );
 };
 \`\`\`
+
+当使用服务端渲染时，\`scrollElement\`应该是字符类型，例：\`body\`、\`#id\`、\`.class\`。
 
 ## 🥂 扩展功能
 

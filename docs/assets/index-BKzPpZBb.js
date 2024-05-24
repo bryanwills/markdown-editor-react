@@ -1,4 +1,4 @@
-import{u as h,r as t,j as n,I as l,h as p}from"./index-Dd16ezBD.js";const a=`## 🐶 Heading
+import{u as l,r as t,j as n,I as h,f as c}from"./index-Cdj2MI_N.js";const a=`## 🐶 Heading
 
 \`\`\`markdown
 ## Heading
@@ -48,10 +48,10 @@ _It is a dream deeply rooted in the American dream._
 
 ## 🐼 Picture
 
-![Description](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif)
+![Description](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif 'title')
 
 \`\`\`markdown
-![Description](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif)
+![Description](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif 'title')
 \`\`\`
 
 ---
@@ -133,6 +133,22 @@ pnpm install md-editor-rt
 \`\`\`
 \`\`\`\`
 
+### 🤌🏻 Forcefully fold
+
+\`\`\`js ::close
+import MdEditor from 'md-editor-rt';
+import 'md-editor-rt/lib/style.css';
+\`\`\`
+
+\`\`\`\`markdown
+\`\`\`js ::close
+import MdEditor from 'md-editor-rt';
+import 'md-editor-rt/lib/style.css';
+\`\`\`
+\`\`\`\`
+
+According to the understanding of other editors, no other editors currently employ a similar syntax. Exercise caution when using this syntax if you intend to copy your content for display in other editors.
+
 ---
 
 ## 🐻‍❄️ Quote
@@ -189,14 +205,14 @@ pnpm install md-editor-rt
 
 ## 🐮 Table
 
-| nickname | from             |
-| -------- | ---------------- |
-| zhijian  | ChongQing, China |
+| THead1          |      THead2       |           THead3 | THead4  |
+| :-------------- | :---------------: | ---------------: | ------- |
+| text-align:left | text-align:center | text-align:right | default |
 
 \`\`\`markdown
-| nickname | from             |
-| -------- | ---------------- |
-| zhijian  | ChongQing, China |
+| THead1          |      THead2       |           THead3 | THead4  |
+| :-------------- | :---------------: | ---------------: | ------- |
+| text-align:left | text-align:center | text-align:right | default |
 \`\`\`
 
 ---
@@ -292,7 +308,7 @@ failure、danger、bug、example、quote、hint、caution、error、attention
 
 !!!
 \`\`\`
-`,i=`## 🐶 标题
+`,r=`## 🐶 标题
 
 \`\`\`markdown
 ## 标题
@@ -342,10 +358,10 @@ _It is a dream deeply rooted in the American dream._
 
 ## 🐼 图片
 
-![描述文字](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif)
+![描述文字](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif 'title')
 
 \`\`\`markdown
-![描述文字](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif)
+![描述文字](https://imzbf.github.io/md-editor-rt/imgs/mark_emoji.gif 'title')
 \`\`\`
 
 ---
@@ -427,6 +443,22 @@ pnpm install md-editor-rt
 \`\`\`
 \`\`\`\`
 
+### 🤌🏻 强制折叠
+
+\`\`\`js ::close
+import MdEditor from 'md-editor-rt';
+import 'md-editor-rt/lib/style.css';
+\`\`\`
+
+\`\`\`\`markdown
+\`\`\`js ::close
+import MdEditor from 'md-editor-rt';
+import 'md-editor-rt/lib/style.css';
+\`\`\`
+\`\`\`\`
+
+据其他编辑器的了解，目前没有其他编辑器使用类似的语法，如果需要拷贝你的内容到其他编辑器展示时，请谨慎使用该语法。
+
 ---
 
 ## 🐻‍❄️ 引用
@@ -483,14 +515,14 @@ pnpm install md-editor-rt
 
 ## 🐮 表格
 
-| 昵称 | 来自      |
-| ---- | --------- |
-| 之间 | 中国-重庆 |
+| 表头1  |  表头2   |  表头3 | 表头4 |
+| :----- | :------: | -----: | ----- |
+| 左对齐 | 中间对齐 | 右对齐 | 默认  |
 
 \`\`\`markdown
-| 昵称 | 来自      |
-| ---- | --------- |
-| 之间 | 中国-重庆 |
+| 表头1  |  表头2   |  表头3 | 表头4 |
+| :----- | :------: | -----: | ----- |
+| 左对齐 | 中间对齐 | 右对齐 | 默认  |
 \`\`\`
 
 ---
@@ -584,4 +616,4 @@ failure、danger、bug、example、quote、hint、caution、error、attention
 
 !!!
 \`\`\`
-`,o="grammar-preview",c=()=>{const e=h(s=>s),[r,d]=t.useState(()=>e.lang==="zh-CN"?i:a),m=()=>{d(e.lang==="en-US"?a:i)};return t.useEffect(m,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(l,{editorId:o,modelValue:r,showCodeRowNumber:!1}),n.jsx(p,{editorId:o})]})})};export{c as default};
+`,i="grammar-preview",u=()=>{const e=l(s=>s),[o,d]=t.useState(()=>e.lang==="zh-CN"?r:a),m=()=>{d(e.lang==="en-US"?a:r)};return t.useEffect(m,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(h,{editorId:i,modelValue:o,showCodeRowNumber:!1}),n.jsx(c,{editorId:i})]})})};export{u as default};
