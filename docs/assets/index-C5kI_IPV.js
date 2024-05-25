@@ -1,4 +1,4 @@
-import{u as m,r as t,j as n,I as c,f as u}from"./index-Cdj2MI_N.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
+import{u as m,r as t,j as n,I as c,f as u}from"./index-DNVeTiaf.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
 
 ## 🔖 MdPreview Props
 
@@ -292,6 +292,16 @@ This is the props of \`MdPreview\`, which is also part of \`MdEditor\`:
 - **default**: \`false\`
 
   Enable the function of enlarging images.
+
+  \`\`\`html
+  <MdEditor noImgZoomIn />
+  \`\`\`
+
+  After version \`4.15.4\`, it is also possible to disable zooming by setting the class \`.not-zoom\`.
+
+  \`\`\`markdown
+  <img class="not-zoom">
+  \`\`\`
 
 ---
 
@@ -2372,7 +2382,17 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 - **类型**：\`boolean\`
 - **默认值**：\`false\`
 
-  是否关闭编辑器默认的放大功能（\`^4.4.0\`）
+  是否关闭编辑器默认的放大功能。
+
+  \`\`\`html
+  <MdEditor noImgZoomIn />
+  \`\`\`
+
+  在\`4.15.4\`以后，也可以设置\`.not-zoom\`来禁用它
+
+  \`\`\`markdown
+  <img class="not-zoom">
+  \`\`\`
 
 ---
 
