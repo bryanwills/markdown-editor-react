@@ -1,4 +1,4 @@
-import{u as m,r as t,j as n,I as c,h as u}from"./index-umFnVryX.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
+import{u as m,r as t,j as n,I as c,h as u}from"./index-mosGlrVK.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
 
 ## 🔖 MdPreview Props
 
@@ -199,7 +199,7 @@ This is the props of \`MdPreview\`, which is also part of \`MdEditor\`:
 
   This is a reserved attribute.
 
-  Basic solution for dangerous code has been built-in since version 3.x. eg: \`<script>alert(123)<\/script>\`
+  Basic solution for dangerous code has been built-in since version 3.x. eg: \`<script>alert(123)<\/script>\`. Prior to version 4.11.3, it was recommended to utilize this attribute for cleaning more complex content to prevent XSS attacks.
 
   A more comprehensive solution has been implemented since version 4.11.3. [Refer to](https://imzbf.github.io/md-editor-rt/en-US/demo#%F0%9F%94%8F%20Modify%20XSS%20configuration)
 
@@ -2294,7 +2294,7 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 
   该属性为保留属性
 
-  基本的危险代码处理方案在3.x以后已内置，例如\`<script>alert(123)<\/script>\`
+  基本的危险代码处理方案在3.x以后已内置，例如\`<script>alert(123)<\/script>\`，4.11.3之前建议使用该属性来清理更复杂的内容以防止 XSS。
 
   在4.11.3以后实现了更完善的处理方案，[参考](https://imzbf.github.io/md-editor-rt/zh-CN/demo#%F0%9F%94%8F%20%E4%BF%AE%E6%94%B9%20xss%20%E9%85%8D%E7%BD%AE)
 
