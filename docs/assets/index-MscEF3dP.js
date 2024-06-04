@@ -1,4 +1,4 @@
-import{u as l,r as t,j as n,I as h,f as c}from"./index-CNz0vqgV.js";const a=`## 🐶 Heading
+import{u as l,r as t,j as n,I as h,f as c}from"./index-Dl-OCadW.js";const a=`## 🐶 Heading
 
 \`\`\`markdown
 ## Heading
