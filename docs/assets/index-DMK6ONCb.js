@@ -1,4 +1,4 @@
-import{u as m,r as t,j as n,I as c,h as u}from"./index-mosGlrVK.js";const o=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
+import{u as p,r as t,e as o,j as n,I as g,f,h as r,i}from"./index-CNz0vqgV.js";const s=`> Use it online: [Go](https://codesandbox.io/s/elated-khorana-65jmr)
 
 ## 🔖 MdPreview Props
 
@@ -226,13 +226,17 @@ This is the props of \`MdPreview\`, which is also part of \`MdEditor\`:
 - **type**: \`boolean\`
 - **default**:\`true\`
 
-  Not append iconfont script, [download](https://at.alicdn.com/t/c/font_2605852_u82y61ve02.js) and import it by yourself.
+  Not append iconfont script, download [Symbol version](\${iconfontSvgUrl}) or [Font class version](\${iconfontClassUrl}) and import it by yourself.
 
   \`\`\`jsx
   import { MdEditor } from 'md-editor-rt';
   import 'md-editor-rt/lib/style.css';
 
   import '/assets/iconfont.js';
+
+  // User Font class version
+  // import '/assets/iconfont.css';
+  // config({ iconfontType: 'class' })
 
   export default () => {
     return <MdEditor noIconfont />;
@@ -318,14 +322,14 @@ This is the props of \`MdPreview\`, which is also part of \`MdEditor\`:
 
   !!! warning Type Warning
 
-  The icon corresponding to copy can only be a string, while others can be components or strings
+  The icon corresponding to \`copy\` and \`collapse-tips\` can only be a string, while others can be components or strings
 
   !!!
 
   \`\`\`tsx
   import React from 'react';
   import type { CustomIcon } from 'md-editor-rt';
-  import { MdEditor } from 'md-editor-rt';
+  import { MdEditor, StrIcon } from 'md-editor-rt';
   // Assuming you have installed an icon library or customized icon components
   import { IconFont } from 'tdesign-icons-react';
   import 'md-editor-rt/lib/style.css';
@@ -334,7 +338,10 @@ This is the props of \`MdPreview\`, which is also part of \`MdEditor\`:
     bold: {
       component: 'A'
     },
+    // Demonstrating the use of default icons
+    copy: StrIcon('copy', {}),
     // copy: '<i class="fa fa-car"></i>',
+    // 'collapse-tips': '<i class="fa fa-car"></i>',
     preview: {
       component: '<i class="fa fa-car"></i>'
     },
@@ -1639,6 +1646,7 @@ Shortcut keys are only available when the textarea has received focus!
 | CTRL + O | ordered list | \`1. ordered list\` |
 | CTRL + L | link | \`[link](https://github.com/imzbf/md-editor-rt)\` |
 | CTRL + Z | withdraw | Withdraw history in editor, not the function of system |
+| CTRL + F | find and replace |  |
 | CTRL + SHIFT + S | line-through | \`~line-through~\` |
 | CTRL + SHIFT + U | unordered list | \`- unordered list\` |
 | CTRL + SHIFT + C | code block |  |
@@ -2089,7 +2097,7 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 \`\`\`
 
 \`\`\`
-`,r=`> 在线尝试示例：[传送门](https://codesandbox.io/s/elated-khorana-65jmr)。
+`,l=`> 在线尝试示例：[传送门](https://codesandbox.io/s/elated-khorana-65jmr)。
 
 ## 🔖 MdPreview Props
 
@@ -2321,13 +2329,17 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 - **类型**：\`boolean\`
 - **默认值**：\`true\`
 
-  不插入 iconfont 链接，你可以[下载](https://at.alicdn.com/t/c/font_2605852_u82y61ve02.js)到本地自行引入。
+  不插入 iconfont 链接，你可以下载[Symbol版本](\${iconfontSvgUrl})或者[Font class版本](\${iconfontClassUrl})到本地自行引入。
 
   \`\`\`jsx
-  import { MdEditor } from 'md-editor-rt';
+  import { MdEditor, config } from 'md-editor-rt';
   import 'md-editor-rt/lib/style.css';
 
   import '/assets/iconfont.js';
+
+  // 使用Font class版本
+  // import '/assets/iconfont.css';
+  // config({ iconfontType: 'class' })
 
   export default () => {
     return <MdEditor noIconfont />;
@@ -2413,14 +2425,14 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 
   !!! warning 类型提示
 
-  copy 对应的图标只能是字符串，其他的都可以是组件或者字符串
+  copy、collapse-tips 对应的图标只能是字符串，其他的都可以是组件或者字符串
 
   !!!
 
   \`\`\`tsx
   import React from 'react';
   import type { CustomIcon } from 'md-editor-rt';
-  import { MdEditor } from 'md-editor-rt';
+  import { MdEditor, StrIcon } from 'md-editor-rt';
   // 假设你使用了三方图标库或者自定义了图标组件
   import { IconFont } from 'tdesign-icons-react';
   import 'md-editor-rt/lib/style.css';
@@ -2429,7 +2441,10 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
     bold: {
       component: 'A'
     },
+    // 演示使用默认图标复制内容
+    copy: StrIcon('copy', {}),
     // copy: '<i class="fa fa-car"></i>',
+    // 'collapse-tips': '<i class="fa fa-car"></i>',
     preview: {
       component: '<i class="fa fa-car"></i>'
     },
@@ -3778,6 +3793,7 @@ config({
 | CTRL + O | 有序列表 | \`1. 有序列表\` |
 | CTRL + L | 链接 | \`[链接](https://github.com/imzbf)\` |
 | CTRL + Z | 撤回 | 触发编辑器内内容撤回，与系统无关 |
+| CTRL + F | 查找替换 |  |
 | CTRL + SHIFT + S | 删除线 | \`~删除线~\` |
 | CTRL + SHIFT + U | 无序列表 | \`- 无序列表\` |
 | CTRL + SHIFT + C | 块级代码 | 多行代码块 |
@@ -4220,4 +4236,4 @@ console.log(iconfontClassUrl, iconfontSvgUrl, allToolbar, allFooter, zh_CN, en_U
 ## ✍️ 编辑此页面
 
 [doc-zh-CN](https://github.com/imzbf/md-editor-rt/blob/dev-docs/public/doc-zh-CN.md)
-`,i="doc-preview",g=()=>{const e=m(d=>d),[s,l]=t.useState(()=>e.lang==="zh-CN"?r:o),a=()=>{l(e.lang==="en-US"?o:r)};return t.useEffect(a,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(c,{editorId:i,modelValue:s}),n.jsx(u,{editorId:i})]})})};export{g as default};
+`,a="doc-preview",b=()=>{const e=p(u=>u),[d,c]=t.useState(()=>o(e.lang==="zh-CN"?l:s,{iconfontSvgUrl:r,iconfontClassUrl:i})),m=()=>{c(o(e.lang==="zh-CN"?l:s,{iconfontSvgUrl:r,iconfontClassUrl:i}))};return t.useEffect(m,[e.lang]),n.jsx("div",{className:"container",children:n.jsxs("div",{className:"doc",children:[n.jsx(g,{editorId:a,modelValue:d}),n.jsx(f,{editorId:a})]})})};export{b as default};
