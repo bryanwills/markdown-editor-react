@@ -186,9 +186,9 @@ const Editor = forwardRef((props: EditorProps, ref: ForwardedRef<unknown>) => {
         className={classnames([
           prefix,
           !!className && className,
-          theme === 'dark' && `${prefix}-dark`,
           (setting.fullscreen || setting.pageFullscreen) && `${prefix}-fullscreen`
         ])}
+        data-theme={theme}
         style={props.style}
         ref={rootRef}
       >

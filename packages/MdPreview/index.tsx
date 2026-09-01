@@ -112,12 +112,8 @@ const MdPreview = forwardRef((props: MdPreviewProps, ref: ForwardedRef<unknown>)
     <EditorContext.Provider value={providerValue}>
       <div
         id={staticProps.editorId}
-        className={classnames([
-          prefix,
-          className,
-          props.theme === 'dark' && `${prefix}-dark`,
-          `${prefix}-previewOnly`
-        ])}
+        className={classnames([prefix, className, `${prefix}-previewOnly`])}
+        data-theme={theme}
         style={props.style}
         ref={rootRef}
       >

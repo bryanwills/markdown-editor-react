@@ -498,7 +498,7 @@ export const useExpose = (
             bus.on(editorId, {
               name: PAGE_FULL_SCREEN_CHANGED,
               callback(status: boolean) {
-                (callBack as ExposeEvent['pageFullscreen'])(status);
+                callBack(status);
               }
             });
 
@@ -508,7 +508,7 @@ export const useExpose = (
             bus.on(editorId, {
               name: FULL_SCREEN_CHANGED,
               callback(status: boolean) {
-                (callBack as ExposeEvent['fullscreen'])(status);
+                callBack(status);
               }
             });
 
@@ -519,7 +519,7 @@ export const useExpose = (
             bus.on(editorId, {
               name: PREVIEW_CHANGED,
               callback(status: boolean) {
-                (callBack as ExposeEvent['preview'])(status);
+                callBack(status);
               }
             });
 
@@ -530,7 +530,7 @@ export const useExpose = (
             bus.on(editorId, {
               name: PREVIEW_ONLY_CHANGED,
               callback(status: boolean) {
-                (callBack as ExposeEvent['previewOnly'])(status);
+                callBack(status);
               }
             });
 
@@ -541,7 +541,7 @@ export const useExpose = (
             bus.on(editorId, {
               name: HTML_PREVIEW_CHANGED,
               callback(status: boolean) {
-                (callBack as ExposeEvent['htmlPreview'])(status);
+                callBack(status);
               }
             });
 
@@ -552,7 +552,7 @@ export const useExpose = (
             bus.on(editorId, {
               name: CATALOG_VISIBLE_CHANGED,
               callback(status: boolean) {
-                (callBack as ExposeEvent['catalog'])(status);
+                callBack(status);
               }
             });
 
